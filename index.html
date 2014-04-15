@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Homepage of the SISL research group">
+  <title>Braincrypto Homepage</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+      <!--[if lte IE 8]>
+          <link rel="stylesheet" href="css/main-grid-old-ie.css">
+      <![endif]-->
+      <!--[if gt IE 8]><!-->
+          <link rel="stylesheet" href="css/main-grid.css">
+      <!--<![endif]-->
+      <!--[if lte IE 8]>
+          <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+      <![endif]-->
+      <!--[if gt IE 8]><!-->
+          <link rel="stylesheet" href="css/layouts/marketing.css">
+      <!--<![endif]-->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">BrainCrypto</a>
+
+        <ul>
+            <li class="pure-menu-selected"><a href="#">Home</a></li>
+            <li><a href="client/">App</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="splash-container">
+  <div class="splash">
+    <h1 class="splash-head">What is the safest place to store your password?</h1>
+  </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+        <h1 class="content-head is-center">▼</h1>
+        <div class="splash-text">
+            <img src="img/logo.png"/>
+            <h1 class="splash-head">In your unconscious memory</h1>
+            <h2>We are building a new login protocol!</h2>
+            <a class="pure-button pure-button-primary" href="signup.html" style="font-size: 200%;">Try it now!</a>
+            <h2>And help science</h2>
+        </div>
+    </div>
+
+    <div class="content content-odd">
+        <h1 class="content-head is-center">▼</h1>
+        <div class="splash-text">
+            <h1 class="splash-head">play the game<br/>challenge your friends</h1>
+            <div class="pure-g">
+                <div class="l-box-lrg pure-u-1 pure-u-med-2-5">
+                     <form class="pure-form pure-form-stacked">
+                           <fieldset>
+
+                               <label for="email">Your Name</label>
+                               <input id="email" type="text" placeholder="Your Name">
+
+                               <label for="email">Your Email</label>
+                               <input id="email" type="email" placeholder="Your Email">
+
+                               <label for="password">Your Password</label>
+                               <input id="password" type="password" placeholder="Your Password">
+
+                               <button type="submit" class="pure-button pure-button-primary">Sign Up</button>
+                           </fieldset>
+                       </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="footer l-box is-center">
+        Homepage of the SISL research group
+    </div>
+</div>
+
+
+<script src="http://yui.yahooapis.com/3.14.1/build/yui/yui.js"></script>
+<script>
+YUI().use('node-base', 'node-event-delegate', function (Y) {
+    // This just makes sure that the href="#" attached to the <a> elements
+    // don't scroll you back up the page.
+    Y.one('body').delegate('click', function (e) {
+        e.preventDefault();
+    }, 'a[href="#"]');
+});
+</script>
+
+
+
+
+
+</body>
+</html>
